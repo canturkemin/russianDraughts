@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Draughts</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="board.png" type="image/png">
+    <script src="draught2.js"></script>
+</head>
+
+<body>
+    <h1>White's Turn</h1>
+    <div class="board">
+        <table onclick="clicktomove(event);">
+            <tr>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="1"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="3"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="5"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="7"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="blackCell">
+                    <p class="redsPieces" id="10"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="12"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="14"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="16"></p>
+                </td>
+                <td class="whiteCell"></td>
+            </tr>
+            <tr>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="21"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="23"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="25"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="redsPieces" id="27"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="blackCell">
+                    <p class="blacksPieces" id="30"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="blacksPieces" id="32"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="blacksPieces" id="34"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="blacksPieces" id="36"></p>
+                </td>
+                <td class="whiteCell"></td>
+            </tr>
+            <tr>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="blacksPieces" id="41"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="blacksPieces" id="43"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="blacksPieces" id="45"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="blacksPieces" id="47"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="50"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="52"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="54"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="56"></p>
+                </td>
+                <td class="whiteCell"></td>
+            </tr>
+            <tr>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="61"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="63"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="65"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="67"></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="70"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="72"></p>
+                </td>
+                <td class="whiteCell">
+                <td class="blackCell">
+                    <p class="whitesPieces" id="74"></p>
+                </td>
+                <td class="whiteCell"></td>
+                <td class="blackCell">
+                    <p class="whitesPieces" id="76"></p>
+                </td>
+                <td class="whiteCell"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

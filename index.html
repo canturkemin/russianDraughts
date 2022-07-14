@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="info.png" type="image/png">
+    <style type="text/css">
+        body {
+            background-color: #5c08ac;
+            font-family: 'Bungee', cursive;
+        }
+
+        h1 {
+            margin-top: 200px;            
+            font-size: 5em;
+            transition: all ease 0.2s;
+        }
+
+        .h1hover {
+            transform: rotate(180deg);
+            color: white;
+            transition: all ease 0.1s;
+        }
+
+        #start {
+            
+            font-size: 25px;
+            color: aqua;
+        }
+
+        #start:hover {
+            cursor: pointer;
+        }
+        p {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Welcome!</h1>
+        <p>
+            <br><br>
+            Welcome to Russian Draughts! <br>
+            In this project I created a draught game which can be played with 2 person. <br>
+            Rules: <br>
+            Each piece can eat pieces and can not eat kings, each king can eat pieces and can not eat kings. <br>
+            To win this game you have to at least have 3 kings or eat all pieces of opponent. <br>
+            Pieces can make one cross move ahead and can eat only one cross piece if behind is empty. <br>
+            Kings can move not only ahead but also backwards, can eat both ahead and backwards. <br>
+            Each piece which come opponents first row, becomes king. <br>
+            Good Luck! <br>
+
+        </p><br><br>
+        <a id= "start" href="board.html">START</a>  
+    </center>
+
+    
+    <script>
+        $("h1").hover(function () {
+            $(this).addClass("h1hover")
+        }, function () {
+            $(this).removeClass("h1hover")
+        });
+
+        var height = screen.height - 200;
+        var width = screen.width - 100;
+        $("#start").css({
+            "top": (height / 2) + "px",
+            "left": (width / 2) + "px"
+        });
+        $("h1").css({
+            "top": (height / 2) + "px",
+            "left": (width / 2) + "px"
+        });
+        
+    </script>
+</body>
+
+</html>
